@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CriadoresCaes.Models
 {
-    public class CriadoresCaes
+    public class CriadorCaes
     {
 
         /// <summary>
