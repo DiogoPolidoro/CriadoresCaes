@@ -8,6 +8,11 @@ namespace CriadoresCaes.Models
     public class Criadores
     {
 
+        public Criadores()
+        {
+            ListaDeCaes = new HashSet<CriadoresCaes>();
+        }
+
         /// <summary>
         /// Nome do criador
         /// </summary>
@@ -37,5 +42,13 @@ namespace CriadoresCaes.Models
         /// Email do criador
         /// </summary>
         public string Email { get; set; }
+
+        // ###########################################
+
+        // lista de cães asociados ao Criador
+        /// <summary>
+        /// lista de cães asociados ao Criador
+        /// </summary>
+        public ICollection<CriadoresCaes> ListaDeCaes { get; set; }
     }
 }
