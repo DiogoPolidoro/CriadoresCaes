@@ -33,7 +33,7 @@ namespace CriadoresCaes
             services.AddDbContext<CriadoresCaesDB>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("myConnectionString"))
                 );
-
+                
             // *************************************************************
 
         }
