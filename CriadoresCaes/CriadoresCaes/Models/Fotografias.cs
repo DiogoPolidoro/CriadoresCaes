@@ -24,16 +24,18 @@ namespace CriadoresCaes.Models
         /// <summary>
         /// Data de quando foi tirado a fotografia
         /// </summary>
+        [Display(Name = "Data da fotografia")]
         public DateTime DataFoto { get; set; }
 
         /// <summary>
         /// Local onde foi tirada a fotografia
         /// </summary>
-        public string LocalFoto { get; set; }
+        public string Local { get; set; }
 
         // criação da FK que referencia o Cão a quem a Foto pertence
 
         [ForeignKey(nameof(Cao))]
+        [Display(Name = "Cão")]
         public int CaoFK { get; set; }
         public Caes Cao { get; set; }
     }
