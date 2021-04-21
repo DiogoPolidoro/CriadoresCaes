@@ -19,6 +19,7 @@ namespace CriadoresCaes.Models
         /// <summary>
         /// Ficheiro que contém a fotografia
         /// </summary>
+        [Display(Name = "Fotografia")]
         public string Foto { get; set; }
 
         /// <summary>
